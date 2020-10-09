@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Left Right Game</title>
+	<link rel="icon" href="assets/images/brain.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="assets/CSS/LR.css">
+	<link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Poppins" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.4/howler.core.min.js"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+   
+	<script type="text/javascript" src="assets/JS/jquery.min.js"></script>
+</head>
+<body>
+ <div class="preloader">
+    <img src="assets/images/car.gif" alt="loading . . .">
+ </div>
+ <script type="text/javascript">
+    //For Preload Page
+		window.addEventListener("load", function () {
+			const loader = document.querySelector(".preloader");
+			loader.className += " hidden"; 
+		});
+ 
+ 
+ </script>
+	<div id="header">
+		<h1> The Left-Right Brain Game !!!</h1>
+        <audio controls autoplay>
+	 <source src="assets/sounds/CA.mp3" type="audio/mp3">
+	</audio>
+
+	</div>
+	<div id="strip">
+	<span> <i class="fa fa-user" aria-hidden="true"></i> Score: 
+	<span id="score"> </span>    </span>
+	<span id="GOspan"> </span>
+	
+	<button id="button"> TRY AGAIN !!</button>
+
+
+	</div>
+
+
+	<div class="container">
+		<div class="left">
+			<!-- The left Box -->
+		<span></span>
+
+
+		</div>
+
+		<div class= "right">
+			<!-- The right box -->
+			<span></span>
+
+		</div>
+
+
+	</div>
+	
+    <script type="text/javascript" src="assets/JS/LR.js"></script>
+
+</body>
+</html>
