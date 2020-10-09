@@ -184,4 +184,3 @@ $("button").click(function(){
 	correct= pickedDiv[0].textContent;
 
 });
-
